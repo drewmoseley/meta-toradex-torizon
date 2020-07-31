@@ -71,5 +71,5 @@ BBMASK += " \
     /meta-toradex-bsp-common/recipes-core/systemd/systemd_%.bbappend \
     /meta-freescale/recipes-graphics/cairo \
     /meta-lmp/meta-lmp-base/recipes-sota/aktualizr/aktualizr_%.bbappend \
-    /meta-lmp/meta-lmp-base/recipes-devtools/gcc/gcc-source_9.%.bbappend \
+    /meta-lmp/meta-lmp-base/recipes-security/libseccomp/libseccomp_%.bbappend \
 "
