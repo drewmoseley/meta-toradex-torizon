@@ -73,3 +73,5 @@ BBMASK += " \
     /meta-lmp/meta-lmp-base/recipes-sota/aktualizr/aktualizr_%.bbappend \
     /meta-lmp/meta-lmp-base/recipes-security/libseccomp/libseccomp_%.bbappend \
 "
+
+DISTRO_FLAVOUR_append_mx8qxpc0 = " for V1.0C HW"
