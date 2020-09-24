@@ -55,7 +55,7 @@ rpcuser:x:992:
 avahi-autoipd:x:993:
 bind:x:994:
 crontab:x:995:
-dhcp:x:996:
+dhcpcd:x:996:
 rpc:x:997:
 sshd:x:998:
 polkitd:x:999:
