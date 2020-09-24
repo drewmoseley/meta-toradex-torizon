@@ -81,6 +81,8 @@ BBMASK += " \
     /meta-freescale/recipes-graphics/cairo \
     /meta-lmp/meta-lmp-base/recipes-sota/aktualizr/aktualizr_%.bbappend \
     /meta-lmp/meta-lmp-base/recipes-security/libseccomp/libseccomp_%.bbappend \
+    /meta-lmp/meta-lmp-base/recipes-bsp/trusted-firmware-a/trusted-firmware-a_%.bbappend \
+    /meta-lmp/meta-lmp-base/recipes-connectivity/dhcp/dhcp_%.bbappend \
 "
 
 DISTRO_FLAVOUR_append_mx8qxpc0 = " for V1.0C HW"
