@@ -21,7 +21,9 @@ SDK_NAME_PREFIX = "${DISTRO}"
 SDK_VERSION = "${DISTRO_VERSION}"
 
 # TorizonCore machine specific overrides
-INHERIT += "torizon toradex-sanity"
+TORADEX_SANITY_CLASS="toradex-sanity"
+TORADEX_SANITY_CLASS_rpi=""
+INHERIT += "torizon ${TORADEX_SANITY_CLASS}"
 
 # This also disables the static packageconfig. runc needs to be dynamically
 # linked for seccomp support. https://github.com/opencontainers/runc/issues/2008
@@ -41,7 +43,7 @@ INITRAMFS_IMAGE = "initramfs-ostree-torizon-image"
 INITRAMFS_FSTYPES = "cpio.gz"
 BUILD_OSTREE_TARBALL = "0"
 # We do not need teziimg, ota-ext4 or wic images by default
-IMAGE_FSTYPES_REMOVE ?= "ota-ext4 wic wic.gz wic.bmap"
+IMAGE_FSTYPES_REMOVE ?= "wic wic.gz wic.bmap"
 IMAGE_FSTYPES_remove_sota = "${IMAGE_FSTYPES_REMOVE}"
 
 # No need to install boot script, kernel image, devicetrees or firmware into the boot partition

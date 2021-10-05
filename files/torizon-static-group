@@ -61,4 +61,5 @@ rpc:x:997:
 sshd:x:998:
 polkitd:x:999:
 torizon:x:1000:
+netdev:x:1001:
 nogroup:x:65534:
